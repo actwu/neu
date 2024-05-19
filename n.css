@@ -531,7 +531,7 @@ p[rotate]{transform: rotate(90deg), translateX(0.025em);}
 a,btn,button {
 padding: 10px 1.8em;
 transition: padding, transform, 0.5s;
-
+border-radius:25px;
 animation: 0.8s btnOff;
 }
 
@@ -550,6 +550,7 @@ a:hover,btn:hover,button:hover {
 transition: padding, transform, 0.5s;
 padding: 8px 1.8em;
 animation: 1s btnOn;
+border-radius:28px;
 transform: translateY(5px);
 }
 
@@ -557,7 +558,7 @@ transform: translateY(5px);
 
 70% {
 padding: 6px 1.8em;
-
+border-radius:28px;
 transform: translateY(8px);
 }
 
