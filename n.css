@@ -528,7 +528,40 @@ p[rotate]{transform: rotate(90deg), translateX(0.025em);}
 /*#################################
 #################################*/
 @media screen {
-a,btn,button {border-radius:25px;padding: 10px 1.8em;}
+a,btn,button {
+padding: 10px 1.8em;
+transition: padding, transform, 0.5s;
+
+animation: 0.8s btnOff;
+}
+
+@keyframes btnOff {
+
+80% {
+padding: 12px 1.8em;
+border-radius:20px;
+transform: translateY(-5px);
+}
+
+
+} 
+
+a:hover,btn:hover,button:hover {
+transition: padding, transform, 0.5s;
+padding: 8px 1.8em;
+animation: 1s btnOn;
+transform: translateY(5px);
+}
+
+@keyframes btnOn {
+
+70% {
+padding: 6px 1.8em;
+
+transform: translateY(8px);
+}
+
+}
 
 cont { max-width: 100%; padding: 1em 1em; display: grid;gap:9px;justify-content: center;place-items: center;flex-wrap: wrap;gap: .1fr; } cont cont {border-radius: 10px;} 
 cont[mid] { padding: 15vh 1em;}
