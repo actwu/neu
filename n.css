@@ -736,7 +736,7 @@ img[avatar] {width:8em; border-radius:25px; height:auto;}
 
 @media screen {
 [neu="out"],[neu]{transition: outline, box-shadow,0.5s; outline: rgba(225,225,225,0.25) solid 2.5px; box-shadow:  inset -4px -4px 5px rgba(0,0,0,0.25), inset 4px 4px 5px rgba(255,255,255,0.25) , 4px 4px 6px rgba(0,0,0,0.25);}
-[neu="in"],[neu="out"]:hover,[neu="out"]:active{transition: outline, box-shadow, 0.5s; outline: rgba(0,0,0,0.20) solid 1px; box-shadow: inset 4px 4px 5px rgba(0,0,0,0.25),  inset -4px -4px 5px rgba(255,255,255,0.25);} [neu="in"] *, [neu="out"]:hover *, [neu="out"]:active * { opacity:75%;} 
+[neu="in"],[neu="out"]:hover,[neu="out"]:active{transition: outline, box-shadow, 0.5s; outline: rgba(0,0,0,0.10) solid 1px; box-shadow: inset 4px 4px 5px rgba(0,0,0,0.25),  inset -4px -4px 5px rgba(255,255,255,0.25);} [neu="in"] *, [neu="out"]:hover *, [neu="out"]:active * { opacity:75%;} 
 
 [px="out"], [px]{border-radius:0px;transition: outline, box-shadow,0.5s; outline: rgba(225,225,225,0.25) solid 2.5px; box-shadow:  inset -4px -4px 1px rgba(0,0,0,0.25), inset 4px 4px 1px rgba(255,255,255,0.25) , 4px 4px 1px rgba(0,0,0,0.25);}
 [px="in"],[px="out"]:hover,[px="out"]:active{transition: outline, box-shadow, 0.5s; outline: rgba(0,0,0,0.15) solid 0.5px; box-shadow: inset 4px 4px 1px rgba(0,0,0,0.25),  inset -4px -4px 1px rgba(255,255,255,0.25);} [px="in"] *, [px="out"]:hover *, [px="out"]active * { opacity:80%;}
