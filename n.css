@@ -528,7 +528,7 @@ p[rotate]{transform: rotate(90deg), translateX(0.025em);}
 /*#################################
 #################################*/
 @media screen {
-a,btn,button {padding: 10px 1.8em;}
+a,btn,button {border-radius:25px;padding: 10px 1.8em;}
 
 cont { max-width: 100%; padding: 1em 1em; display: grid;gap:9px;justify-content: center;place-items: center;flex-wrap: wrap;gap: .1fr; } cont cont {border-radius: 10px;} 
 cont[mid] { padding: 15vh 1em;}
