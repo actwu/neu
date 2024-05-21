@@ -9,9 +9,9 @@
 word-wrap: break-word; margin:0px; border: 0px;outline: none; user-select: none; border-radius: 0px; border-style: none; text-decoration: none; text-rendering: optimizeLegibility; text-transform: none; 
 
 
---red: #EF7C8E;  --blue: #305bc7;  --yell: #fcda6a;  --green: #50de89;  --pink: #F1CCD7;  --vio: #bb78fa;  --matte: #fff2ff;  --black: #101020;
+--red: #EF7C8E;  --blue: #305bc7;  --yell: #fcda6a;  --green: #50de89;  --pink: #F1CCD7;  --vio: #bb78fa;  --matte: #fafafa;  --black: #101020;
 
---red2: #661e28;  --blue2: #0d1938;  --yell2: #807142;  --green2: #278c50;  --pink2: #8c5f6d; --vio2: #492d63;  --matte2: #a18fa1;  --black2: #505060;
+--red2: #661e28;  --blue2: #0d1938;  --yell2: #807142;  --green2: #278c50;  --pink2: #8c5f6d; --vio2: #492d63;  --matte2: #ebebeb;  --black2: #505060;
 } 
 
 [m] {color: var(--matte);} svg[m] {fill: var(--matte);} [mbg] {background-color: var(--matte);} [mol] {outline: var(--matte) solid 1.5px;} [msh] {box-shadow: 2.5px 2.5px 0px 2px var(--matte);}
