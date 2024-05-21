@@ -528,7 +528,7 @@ p[rotate]{transform: rotate(90deg), translateX(0.025em);}
 /*#################################
 #################################*/
 @media screen {
-a,btn,button {
+a,btn,button, .markdown-body a, .markdown-body button{
 padding: 10px 1.8em;
 transition: padding, transform, 0.5s;
 border-radius:25px;
@@ -546,7 +546,7 @@ transform: translateY(-5px);
 
 } 
 
-a:hover,btn:hover,button:hover {
+a:hover,btn:hover,button:hover, .markdown-body a:hover, .markdown-body button:hover {
 transition: padding, transform, 0.5s;
 padding: 8px 1.8em;
 animation: 1s btnOn;
