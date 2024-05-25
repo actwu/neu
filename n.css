@@ -750,20 +750,20 @@ img[avatar] {width:8em; border-radius:25px; height:auto;}
 #################################*/
 
 @media screen {
-base {
+layout {
 height: 100vh;margin: 0;overflow: hidden;
 display: flex;flex-direction: column; 
 top:0;left:0;right:0;bottom:0;
 }
 
-base section {
+layout section {
 display:contents;
 justify-content: center;
 min-width: 0%;
 min-height: 0vh; 
 width: 100%;
 }
-base div:not(div[scroll]) {
+layout div:not(div[scroll]) {
 display: block;
 padding: 0.3em;
 place-content: center;
@@ -779,7 +779,7 @@ min-height: 0.5in;
 gap: 2px;
 }
 
-base span {
+layout span {
 flex-grow: 1;
 
 display: flex;
@@ -787,13 +787,13 @@ flex-direction: row;
 
 }
 
-base div[box], a[box] {
+layout div[box], a[box] {
 flex-grow: 1; 
 border: 0;
 max-width: 1in;
 }
 
-base div[scroll]{
+layout div[scroll]{
 
 display: block;
 padding: 0.1em;
@@ -808,11 +808,11 @@ overflow-y: scroll;
 
 }
 
-base [scroll] {
+layout [scroll] {
 overflow-y: scroll;
 }
 
-base div[scroll] *{
+layout div[scroll] *{
 margin: 0.5em;
 }
 }
