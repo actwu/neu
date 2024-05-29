@@ -673,6 +673,11 @@ img {width:18em;height:auto;max-width:18em;}
 img[icon] {width:3em; border-radius:50%; height:auto;}
 img[avatar] {width:8em; border-radius:25px; height:auto;}
 
+textarea::-webkit-resizer {
+  background-color: #fafafa;
+  border-radius: 50%;
+  border: 0px;
+}
 }
 /*#################################
 #################################*/
