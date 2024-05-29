@@ -545,7 +545,6 @@ border-radius:25px;
 a:hover,btn:hover,button:hover, .markdown-body a:hover, .markdown-body button:hover {
 transition: padding, opacity, 0.5s;
 padding: 8px 1.8em;
-border-radius:28px;
 opacity: 80%;
 }
 
