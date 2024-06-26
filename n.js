@@ -6,6 +6,51 @@ window.onbeforeunload = function() {
   return "Do you want to save changes?";
 };
 
+function addNeu() {
+var cssUrl = "https://actwu.github.io/neu/n.css";
+var link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = cssUrl;
+document.head.appendChild(link);
+}
+
+function setSEO(title, description, keywords, canonicalUrl) {
+document.title = title;
+var metaDesc = document.querySelector('meta[name="description"]');
+if (!metaDesc) {
+metaDesc = document.createElement('meta');
+metaDesc.setAttribute('name', 'description');
+document.head.appendChild(metaDesc);
+}
+metaDesc.setAttribute('content', description);
+
+var metaKeywords = document.querySelector('meta[name="keywords"]');
+if (!metaKeywords) {
+metaKeywords = document.createElement('meta');
+metaKeywords.setAttribute('name', 'keywords');
+document.head.appendChild(metaKeywords);
+}
+metaKeywords.setAttribute('content', keywords);
+
+var canonicalLink = document.querySelector('link[rel="canonical"]');
+if (!canonicalLink) {
+canonicalLink = document.createElement('link');
+canonicalLink.setAttribute('rel', 'canonical');
+document.head.appendChild(canonicalLink);
+}
+canonicalLink.setAttribute('href', canonicalUrl);
+}
+
+function setViewport() {
+var viewport = document.querySelector('meta[name="viewport"]');
+if (!viewport) {
+viewport = document.createElement('meta');
+viewport.setAttribute('name', 'viewport');
+document.head.appendChild(viewport);
+}
+viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+}
+
 /*///////////////////////////////////////////*/
 /*///////////////////////////////////////////*/
 /*///////////////////////////////////////////*/
