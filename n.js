@@ -192,3 +192,6 @@ document.querySelector(where).value = (data);
 });
 }
 
+// Set and Get Token
+const setT=t=>{const url=new URL(window.location.href);url.searchParams.set('t',t);window.history.replaceState({},'',url);};
+const getT=()=>{const url=new URL(window.location.href);return url.searchParams.get('t');};
