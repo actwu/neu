@@ -192,6 +192,36 @@ document.querySelector(where).value = (data);
 });
 }
 
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+
+function hdlScr(sel) {
+const els = document.querySelectorAll(sel);
+const oS = 3;
+window.addEventListener("scroll", () => {
+const { scrollTop } = document.documentElement;
+els.forEach(el => {
+const t = el.getBoundingClientRect().top;
+
+if (t <= oS) {
+if (el.style.opacity != 1) {
+el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 500, fill: "forwards" });
+el.style.opacity = 1;
+}
+el.style.position = 'sticky'; 
+el.style.top = `${oS}px`; 
+} else {
+if (el.style.opacity != 0) {
+el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 500, fill: "forwards" });
+el.style.opacity = 0;
+}
+el.style.position = ''; 
+}
+});
+});
+}
+
 // Set and Get Token
 const setT=t=>{const url=new URL(window.location.href);url.searchParams.set('t',t);window.history.replaceState({},'',url);};
 const getT=()=>{const url=new URL(window.location.href);return url.searchParams.get('t');};
